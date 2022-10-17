@@ -99,3 +99,22 @@ sudo usermod -aG docker $USER
 ```bash
 sudo service docker start
 ```
+
+## Install ASDF
+
+https://asdf-vm.com/guide/getting-started.html
+
+# Comando .. 
+
+```bash
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+```
+add in .zshrc -->  . $HOME/.asdf/asdf.sh
+
+OR
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
