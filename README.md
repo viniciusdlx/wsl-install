@@ -121,6 +121,32 @@ fpath=(${ASDF_DIR}/completions $fpath)
 #initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
+add node
+
+**download plugin**
+
+```bash
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+```
+
+**install version**
+
+```bash
+asdf install nodejs {version}
+```
+
+**set version global**
+
+```bash
+asdf global nodejs {version}
+```
+
+**set local version**
+
+```bash
+asdf local nodejs {version}
+```
+
 **-------------------------------------------------------------------------------**
 
 ### Themes
