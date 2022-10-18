@@ -1,10 +1,10 @@
-### CODES
+# CODES
 
 **After install Ubuntu**
 
 ## Install oh-my-zsh
 
-# Comando 1
+### Comando 1
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/zsh-install.sh)" -y
@@ -14,7 +14,7 @@ _Após instalar, reiniciar o terminal como mostra na mensagem_
 
 _Selecionar Opção 2_
 
-# Comando 2
+### Comando 2
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/tools-zsh-install.sh)" -y
@@ -24,7 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-win
 
 ## plugins=(git git-flow F-Sy-H zsh-autosuggestions zsh-completions)
 
-# Comando 3
+### Comando 3
 
 **Fast Syntax Highlighting**
 
@@ -33,7 +33,7 @@ git clone https://github.com/z-shell/F-Sy-H.git \
  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
 ```
 
-# Comando 4
+### Comando 4
 
 **zsh-autosuggestions**
 
@@ -41,7 +41,7 @@ git clone https://github.com/z-shell/F-Sy-H.git \
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-# Comando 5
+### Comando 5
 
 **zsh-completions**
 
@@ -51,9 +51,9 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.o
 
 **-------------------------------------------------------------------------------**
 
-## Install Docker
+# Install Docker
 
-# Comando 1
+### Comando 1
 
 ```bash
 sudo apt update && sudo apt upgrade
@@ -67,7 +67,7 @@ sudo apt-get install \
 
 ```
 
-# Comando 2
+### Comando 2
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -76,25 +76,25 @@ echo \
  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-# Comando 3
+### Comando 3
 
 ```bash
 sudo apt-get update
 ```
 
-# Comando 4
+### Comando 4
 
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-# Comando 5
+### Comando 5
 
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-# Comando 6
+### Comando 6
 
 ```bash
 sudo service docker start
@@ -105,8 +105,6 @@ sudo service docker start
 ## Install ASDF
 
 https://asdf-vm.com/guide/getting-started.html
-
-# Comando ..
 
 ```bash
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
@@ -149,7 +147,7 @@ asdf local nodejs {version}
 
 **-------------------------------------------------------------------------------**
 
-### Themes
+# Themes
 
 ## Install Powerlevel10k
 
