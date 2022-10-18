@@ -20,7 +20,9 @@ _Selecionar Opção 2_
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/tools-zsh-install.sh)" -y
 ```
 
-## Install Plugins do oh-my-zsh = ~/.zshrc plugins=(git git-flow F-Sy-H zsh-autosuggestions zsh-completions)
+## Install Plugins do oh-my-zsh = ~/.zshrc
+
+## plugins=(git git-flow F-Sy-H zsh-autosuggestions zsh-completions)
 
 # Comando 3
 
@@ -47,13 +49,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 ```
 
-## Install Theme powerlevel10k
-
-...
+**-------------------------------------------------------------------------------**
 
 ## Install Docker
 
-# Comando ..
+# Comando 1
 
 ```bash
 sudo apt update && sudo apt upgrade
@@ -67,7 +67,7 @@ sudo apt-get install \
 
 ```
 
-# Comando ..
+# Comando 2
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -76,40 +76,43 @@ echo \
  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-# Comando ..
+# Comando 3
 
 ```bash
 sudo apt-get update
 ```
 
-# Comando ..
+# Comando 4
 
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-# Comando ..
+# Comando 5
 
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-# Comando ..
+# Comando 6
 
 ```bash
 sudo service docker start
 ```
 
+**-------------------------------------------------------------------------------**
+
 ## Install ASDF
 
 https://asdf-vm.com/guide/getting-started.html
 
-# Comando .. 
+# Comando ..
 
 ```bash
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 ```
-add in .zshrc -->  . $HOME/.asdf/asdf.sh
+
+add in .zshrc --> . $HOME/.asdf/asdf.sh
 
 OR
 
@@ -118,3 +121,28 @@ fpath=(${ASDF_DIR}/completions $fpath)
 #initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
+**-------------------------------------------------------------------------------**
+
+### Themes
+
+## Install Powerlevel10k
+
+*https://github.com/romkatv/powerlevel10k#oh-my-zsh*
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+**Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.**
+
+**-------------------------------------------------------------------------------**
+
+## Install Spaceship
+
+```bash
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+```
+
+```bash
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
