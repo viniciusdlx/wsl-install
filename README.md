@@ -113,8 +113,8 @@ add in .zshrc -->  . $HOME/.asdf/asdf.sh
 
 OR
 
-# append completions to fpath
+#append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
-# initialise completions with ZSH's compinit
+#initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
