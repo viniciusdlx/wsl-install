@@ -197,38 +197,38 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 ## Instalar CLI GCP
 
-**Fazer Download do arquivo de 64 Bits do Linux
+**Fazer Download do arquivo de 64 Bits do Linux**
 ```bash
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-414.0.0-linux-x86_64.tar.gz
 ```
 
-*Extrair o conteúdo do arquivo
+*Extrair o conteúdo do arquivo*
 ```bash
 tar -xf google-cloud-cli-414.0.0-linux-x86_64.tar.gz
 ```
 
-*Adicione a CLI gcloud ao caminho. Execute o script de instalação na raiz da pasta extraída usando o seguinte comando:
+*Adicione a CLI gcloud ao caminho. Execute o script de instalação na raiz da pasta extraída usando o seguinte comando:*
 ```bash
 ./google-cloud-sdk/install.sh
 ```
 
-*Isso também pode ser feito de maneira não interativa (por exemplo, usando um script) e fornecendo preferências como sinalizações. Para ver as flas disponíveis, execute:
+*Isso também pode ser feito de maneira não interativa (por exemplo, usando um script) e fornecendo preferências como sinalizações. Para ver as flas disponíveis, execute:*
 ```bash
 ./google-cloud-sdk/install.sh --help
 ```
 
-**Passos da instalaçao
+**Passos da instalaçao**
 -> 1 = y
 -> 2 = Y
 -> 3 = enter
 
-**Login GCP
+**Login GCP**
 
-*Iniciar gcloud sdk
+*Iniciar gcloud sdk*
 ```bash
 ./google-cloud-sdk/bin/gcloud init
 ```
 
-*Entre no link para gerar código de auth
-*Cole o código de auth no terminal
+*Entre no link para gerar código de auth*
+*Cole o código de auth no terminal*
 
