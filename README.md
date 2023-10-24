@@ -203,12 +203,12 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 **Fazer Download do arquivo de 64 Bits do Linux**
 ```bash
-curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-414.0.0-linux-x86_64.tar.gz
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 ```
 
 *Extrair o conteúdo do arquivo*
 ```bash
-tar -xf google-cloud-cli-414.0.0-linux-x86_64.tar.gz
+tar -xf google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 ```
 
 *Adicione a CLI gcloud ao caminho. Execute o script de instalação na raiz da pasta extraída usando o seguinte comando:*
