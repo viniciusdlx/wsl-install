@@ -151,7 +151,42 @@ asdf local nodejs {version}
 
 **-------------------------------------------------------------------------------**
 
-# Themes
+# Themes 
+
+## Install Fonte JetBrains Mono
+
+*https://www.jetbrains.com/pt-br/lp/mono/*
+
+## Dracula Theme Terminal
+
+```json
+"schemes": [
+    {
+        "name": "Dracula",
+        "cursorColor": "#F8F8F2",
+        "selectionBackground": "#44475A",
+        "background": "#282A36",
+        "foreground": "#F8F8F2",
+        "black": "#21222C",
+        "blue": "#BD93F9",
+        "cyan": "#8BE9FD",
+        "green": "#50FA7B",
+        "purple": "#FF79C6",
+        "red": "#FF5555",
+        "white": "#F8F8F2",
+        "yellow": "#F1FA8C",
+        "brightBlack": "#6272A4",
+        "brightBlue": "#D6ACFF",
+        "brightCyan": "#A4FFFF",
+        "brightGreen": "#69FF94",
+        "brightPurple": "#FF92DF",
+        "brightRed": "#FF6E6E",
+        "brightWhite": "#FFFFFF",
+        "brightYellow": "#FFFFA5"
+    }
+]
+
+```
 
 ## Install Powerlevel10k
 
@@ -235,4 +270,5 @@ tar -xf google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 
 *Entre no link para gerar código de auth*
 *Cole o código de auth no terminal*
+
 
