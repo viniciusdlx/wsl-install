@@ -110,18 +110,24 @@ sudo service docker start
 
 https://asdf-vm.com/guide/getting-started.html
 
+### Install Go
 ```bash
-git clone https://github.com/asdf-vm/asdf.git --branch v0.18.0
+wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc
+source ~/.zshrc
+go version
+rm -rf go1.25.4.linux-amd64.tar.gz
 ```
 
-add in .zshrc --> . $HOME/.asdf/asdf.sh
+### Install Asdf
 
-OR
-
-#append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-#initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
+```bash
+go install github.com/asdf-vm/asdf/cmd/asdf@v0.18.0
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+asdf --version
+```
 
 add node
 
@@ -134,19 +140,19 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 **install version**
 
 ```bash
-asdf install nodejs {version}
+asdf install nodejs {version} / latest / lts
 ```
 
 **set version global**
 
 ```bash
-asdf global nodejs {version}
+asdf set -u nodejs {version} / lts
 ```
 
 **set local version**
 
 ```bash
-asdf local nodejs {version}
+asdf set nodejs {version}
 ```
 
 **-------------------------------------------------------------------------------**
@@ -270,6 +276,7 @@ tar -xf google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 
 *Entre no link para gerar código de auth*
 *Cole o código de auth no terminal*
+
 
 
 
