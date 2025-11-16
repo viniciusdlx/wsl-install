@@ -24,37 +24,6 @@ _Selecionar Opção 2_
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/tools-zsh-install.sh)" -y
 ```
 
-## Install Plugins do oh-my-zsh = ~/.zshrc
-
-## plugins=(git git-flow F-Sy-H zsh-autosuggestions zsh-completions)
-
-### Comando 3
-
-**Fast Syntax Highlighting**
-
-```bash
-git clone https://github.com/z-shell/F-Sy-H.git \
- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
-```
-
-### Comando 4
-
-**zsh-autosuggestions**
-
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-### Comando 5
-
-**zsh-completions**
-
-```bash
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-```
-
-**-------------------------------------------------------------------------------**
-
 # Install Docker
 
 ### Comando 1
@@ -206,40 +175,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 **-------------------------------------------------------------------------------**
 
-## Install Spaceship
-
-*https://dev.to/erickrock80/pt-br-instalando-oh-my-zsh-no-windows-terminal-3a8l*
-
-```bash
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-```
-
-```bash
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-
-**Set ZSH_THEME="spaceship" in ~/.zshrc.**
-
-```zshrc
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
-  exec_time     # Execution time
-  line_sep      # Line break
-  vi_mode       # Vi-mode indicator
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
-```
-
 ## Instalar CLI GCP
 
 **Fazer Download do arquivo de 64 Bits do Linux**
@@ -277,6 +212,52 @@ tar -xf google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 *Entre no link para gerar código de auth*
 *Cole o código de auth no terminal*
 
+**-------------------------------------------------------------------------------**
 
+## Config Github
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@github.com"
+```
+
+### Gerar SSH-Key para git clone ssh (Opcional)
+
+```bash
+ssh-keygen -t ed25519 -C "seuemail@github.com"
+```
+
+Quando perguntar por passphrase, pode deixar vazio ou definir uma senha.
+
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+Copiar Chave (começa no ssh-ed25519)
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Vá para: https://github.com/settings/keys
+New SSH key
+Cole a chave
+Salvar
+
+Testar chave: 
+```bash
+ssh -T git@github.com
+```
+
+Deve aparecer algo como
+
+```bash
+Hi SEU_USUARIO! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+Só clonar os projetos por ssh
 
 
