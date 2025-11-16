@@ -111,7 +111,7 @@ sudo service docker start
 https://asdf-vm.com/guide/getting-started.html
 
 ```bash
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+git clone https://github.com/asdf-vm/asdf.git --branch v0.18.0
 ```
 
 add in .zshrc --> . $HOME/.asdf/asdf.sh
@@ -270,5 +270,6 @@ tar -xf google-cloud-cli-451.0.0-linux-x86_64.tar.gz
 
 *Entre no link para gerar código de auth*
 *Cole o código de auth no terminal*
+
 
 
